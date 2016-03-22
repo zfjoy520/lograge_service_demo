@@ -64,6 +64,7 @@ concise_logging: [https://github.com/gshaw/concise_logging](https://github.com/g
 ### 额外的代码
 只需要在 config/application.rb 中引入 lib/lograge_service 即可:
 
+    # [config/application.rb]
     ...
 
     require File.expand_path('../../lib/lograge_service', __FILE__)
@@ -78,7 +79,7 @@ concise_logging: [https://github.com/gshaw/concise_logging](https://github.com/g
 
 把rails 默认的log formatter 注释掉
 
-    # config/environments/production.rb
+    # [config/environments/production.rb]
     ...
     # Use default logging formatter so that PID and timestamp are not suppressed.
     # config.log_formatter = ::Logger::Formatter.new
