@@ -1,0 +1,10 @@
+defaults: &defaults
+  host: localhost
+  port: 3388
+  channel: demo
+
+development: &development
+  <<: *defaults
+
+production: &production
+  <<: *defaults

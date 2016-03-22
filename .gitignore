@@ -1,0 +1,11 @@
+/.env
+/.keep
+/.DS_Store
+/.rvmrc
+/.ruby-version
+/.bundle
+/.idea
+/log
+/tmp
+/config/database.yml
+/db/schema.rb
