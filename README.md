@@ -24,9 +24,9 @@ concise_logging: [https://github.com/gshaw/concise_logging](https://github.com/g
 * Kids启动所需配置文件在: config/conf/kids_server.conf
 * Kids连接配置文件在: config/settings/kids.yml
 * 配置文件加载用到了: [hashie](https://github.com/intridea/hashie) 中的 Hashie::Mash
-  不太喜欢将一大堆配置文件都放在 config 目录下, 所以在 config 目录下新建了一个 settings 目录(config/settings)
-  里面的 *.yml 都将加载到 ::Settings::Xxx 中
-  相关的 initializer 文件在: config/initializers/settings.rb
+* 不太喜欢将一大堆配置文件都放在 config 目录下, 所以在 config 目录下新建了一个 settings 目录(config/settings)
+* 里面的 *.yml 都将加载到 ::Settings::Xxx 中
+* 相关的 initializer 文件在: config/initializers/settings.rb
 
 
 ## 开始吧
