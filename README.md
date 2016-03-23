@@ -77,12 +77,4 @@ concise_logging: [https://github.com/gshaw/concise_logging](https://github.com/g
       class Application < Rails::Application
          ...
 
-把rails 默认的log formatter 注释掉
-
-    # [config/environments/production.rb]
-    ...
-    # Use default logging formatter so that PID and timestamp are not suppressed.
-    # config.log_formatter = ::Logger::Formatter.new
-    ...
-
 ### 代码写得不好, 轻拍
