@@ -10,6 +10,7 @@ module LogrageService
         app.config.lograge.enabled = true
         app.config.lograge.formatter = Lograge::Formatters::Logstash.new
         app.config.lograge.logger = Logger.new
+
         app.config.lograge.custom_options = lambda do |event|
           payload = Thread.current[:payload].clone
           payload.merge!(
@@ -18,6 +19,9 @@ module LogrageService
               params: event.payload[:params].as_json.except(*%w{controller action})
           )
         end
+
+        # 覆盖掉ActiveSupport::TaggedLogging::Formatter的call方法
+        app.config.log_formatter.extend Formatter
 
         # attach_to xxx
         LogSubscriber.attach_to :action_controller

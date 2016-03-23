@@ -6,6 +6,7 @@ module LogrageService
   autoload :SqlSubscriber
   autoload :LogSubscriber
   autoload :Logger
+  autoload :Formatter
 end
 
 require_relative 'lograge_service/railtie' if defined?(Rails)
